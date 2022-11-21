@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/master.css')}}">
+</head>
+<body>
+    <div  class="conntainer">
+        <form  action="/process" method="POST">
+            <table>
+                <tr>
+                    <td>Your Name:</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>Dojo Location:</td>
+                    <td><input type="text" name="location" required></td>
+                </tr>
+                <tr>
+                    <td>Favaritr Langouge:</td>
+                    <td><input type="text" name="langouge" required></td>
+                </tr>
+                <tr>
+                    <td>Comment (optional):</td>
+                    <td><textarea  name="comment" rows="4" cols="50"></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
